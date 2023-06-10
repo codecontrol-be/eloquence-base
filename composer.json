@@ -1,18 +1,11 @@
 {
-    "name": "sofa/eloquence-base",
+    "name": "fattureincloud/eloquence-base",
     "description": "Flexible Searchable, Mappable, Metable, Validation and more extensions for Laravel Eloquent ORM.",
     "license": "MIT",
-    "support": {
-        "issues": "https://github.com/jarektkaczyk/eloquence-base/issues",
-        "source": "https://github.com/jarektkaczyk/eloquence-base"
-    },
     "keywords": [
         "laravel",
         "eloquent",
-        "metable",
-        "searchable",
-        "mappable",
-        "mutable"
+        "mappable"
     ],
     "authors": [
         {
@@ -24,7 +17,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "sofa/hookable": ">=5.5",
+        "fattureincloud/eloquence-hookable": ">=5.5",
         "illuminate/database": ">=5.5"
     },
     "require-dev": {
