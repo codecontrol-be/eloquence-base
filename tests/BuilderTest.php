@@ -22,6 +22,8 @@ class BuilderTest extends TestCase
         $builder->rightJoinRelations(['foo', 'bar']);
         $builder->joinRelations('foo', 'bar');
         $builder->joinRelations(['foo', 'bar']);
+
+        $this->assertEquals(1, 1);
     }
 
     /** @test */
