@@ -101,7 +101,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * @param  string  $key
      * @return bool
      */
-    public function offsetExists($key)
+    public function offsetExists($key): bool
     {
         return array_key_exists($key, $this->columns);
     }
@@ -112,7 +112,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * @param  string $key
      * @return Column
      */
-    public function offsetGet($key)
+    public function offsetGet($key): Column
     {
         return $this->columns[$key];
     }
@@ -124,7 +124,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * @param Column $column
      * @return void
      */
-    public function offsetSet($key, $column)
+    public function offsetSet($key, $column): void
     {
         $this->add($column);
     }
@@ -133,9 +133,9 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * Unset element at given offset.
      *
      * @param  string $key
-     * @return Column
+     * @return void
      */
-    public function offsetUnset($key)
+    public function offsetUnset($key): void
     {
         unset($this->columns[$key]);
     }
@@ -145,7 +145,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      *
      * @return ArrayIterator
      */
-    public function getIterator()
+    public function getIterator(): ArrayIterator
     {
         return new ArrayIterator($this->columns);
     }

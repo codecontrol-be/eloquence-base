@@ -16,9 +16,9 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
-        "fattureincloud/eloquence-hookable": ">=7.0",
-        "illuminate/database": ">=5.5"
+        "php": ">=8.0",
+        "fattureincloud/eloquence-hookable": ">=8.0",
+        "illuminate/database": ">=8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",

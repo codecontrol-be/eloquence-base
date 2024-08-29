@@ -67,8 +67,7 @@ class SearchableBuilderTest extends TestCase
                       $q->whereIn('id', ['outer_6', 'outer_7']);
                   })
                   ->whereRaw('first_name = ?', ['outer_8'])
-                  ->whereDate('id', '=', ['inner_8'])
-                  ->where('last_name', new Expression('tkaczyk'));
+                  ->whereDate('id', '=', ['inner_8']);
 
         $query->get();
 
